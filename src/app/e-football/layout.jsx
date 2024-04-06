@@ -1,4 +1,4 @@
-import MainNavbar from "@/components/mainNavbar.jsx";
+import Navbar from "@/components/navbar/navbar";
 
 export const metadata = {
   title: "E-Football Game",
@@ -8,9 +8,9 @@ export const metadata = {
 export default function EFootballLayout({ children }) {
   return (
     <div>
-      <MainNavbar />
-      <div className="">
-        <div className=" px-6">{children}</div>
+      <div className="max-w-[500px] border px-3 w-full mx-auto">
+        <Navbar />
+        <div>{children}</div>
       </div>
     </div>
   );

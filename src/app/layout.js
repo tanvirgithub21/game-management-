@@ -1,6 +1,5 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import NextUiProviders from "./nextUiProviders";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,10 +10,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html className="light" lang="en">
-      <body className={inter.className}>
-        <NextUiProviders>{children}</NextUiProviders>
-      </body>
+    <html className="dark" lang="en">
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }
